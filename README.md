@@ -48,8 +48,8 @@ By utilizing a centralized orchestrator and specialized domain agents, the platf
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/tamil-selvan-k/Multi-Agent-Decision-Engine.git
-   cd Multi-Agent-Decision-Engine
+   git clone https://github.com/Sethumathavan-SP/multi-agent-decision-engine.git
+   cd multi-agent-decision-engine
    ```
 
 For detailed setup instructions for both Node and Python servers, see our [Setup Guide](docs/setup.md).
