@@ -1,9 +1,5 @@
 # 🧠 Multi-Agent Decision Engine for Enterprise Operations
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Python](https://img.shields.io/badge/python-3.10%2B-blue)
-![Node.js](https://img.shields.io/badge/node.js-TypeScript-green)
-
 > **A neuro-symbolic multi-agent platform autonomously orchestrating decisions across siloed enterprise departments.**
 
 ## 📖 Overview
@@ -20,7 +16,7 @@ By utilizing a centralized orchestrator and specialized domain agents, the platf
 
 ## 🏗️ Architecture
 
-1. **API Gateway & Core Backend (Node.js/TypeScript):** Manages user authentication, database CRUD operations, and real-time streams for the frontend dashboard.
+1. **API Gateway & Core Backend (Springboot):** Manages user authentication, database CRUD operations, and real-time streams for the frontend dashboard.
 2. **AI & Orchestration Engine (Python/FastAPI):** Built with Google Agent Development Kit (ADK), this microservice houses the AI agents, manages LLM state, and executes deterministic ML pipelines.
 3. **Domain Agents (The Specialists):**
    * `Sales Agent`: Analyzes CRM data and forecasts demand.
@@ -30,7 +26,7 @@ By utilizing a centralized orchestrator and specialized domain agents, the platf
 ## 💻 Tech Stack
 * **AI & Orchestration:** Google Gemini (Vertex AI), Google ADK (Agent Development Kit).
 * **AI Backend Microservice:** Python, FastAPI.
-* **Core Backend Microservice:** Node.js, TypeScript, Express (or NestJS), WebSockets.
+* **Core Backend Microservice:** Springboot, WebSockets.
 * **Deterministic ML:** Prophet, Scikit-Learn.
 * **Data & Memory:** PostgreSQL (Audit/RBAC), Redis (Agent Session State & Message Broker).
 * **Frontend:** Next.js, React.
@@ -40,7 +36,7 @@ By utilizing a centralized orchestrator and specialized domain agents, the platf
 
 ### Prerequisites
 * Python 3.10+
-* Node.js v24 & npm
+* Springboot v4.0.1
 * Docker & Docker Compose
 * Google Cloud Platform account (for Vertex AI API keys)
 
@@ -52,7 +48,7 @@ By utilizing a centralized orchestrator and specialized domain agents, the platf
    cd multi-agent-decision-engine
    ```
 
-For detailed setup instructions for both Node and Python servers, see our [Setup Guide](docs/setup.md).
+For detailed setup instructions for both Springboot and Python servers, see our [Setup Guide](docs/setup.md).
 For architectural details and how to extend the platform, see our [Developer Guide](docs/developer_guide.md).
 
 ## 🤝 Contributing
